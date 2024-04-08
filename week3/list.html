@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+
+        .a {
+            list-style-type: lower-roman; 
+        }
+
+        .b {
+            list-style-type: lower-alpha; 
+        }
+
+        .c {
+            list-style-type: square; 
+        }
+
+        .d li:before {
+            content: "$\00a0"; 
+            position: relative;
+            left: -1em;
+        }
+    </style>
+</head>
+<body>
+
+<ol class="a">
+    <li>Item A1</li>
+    <li>Item A2</li>
+    <li>Item A3</li>
+    <li>Item A4</li>
+    <li>Item A5</li>
+</ol>
+
+<ol class="b">
+    <li>Item B1</li>
+    <li>Item B2</li>
+    <li>Item B3</li>
+    <li>Item B4</li>
+    <li>Item B5</li>
+</ol>
+
+<ul class="c">
+    <li>Item C1</li>
+    <li>Item C2</li>
+    <li>Item C3</li>
+    <li>Item C4</li>
+    <li>Item C5</li>
+</ul>
+
+<ul class="d">
+    <li>Item D1</li>
+    <li>Item D2</li>
+    <li>Item D3</li>
+    <li>Item D4</li>
+    <li>Item D5</li>
+</ul>
+
+</body>
+</html>
