@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia and Number Check</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        #triviaResult, #numberCheckResult {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Trivia question</h2>
+        <p>Q: What is the capital of France?</p>
+        <input type="text" id="triviaAnswer" placeholder="Your answer">
+        <button onclick="checkTrivia()">Submit</button>
+        <div id="triviaResult"></div>
+    </div>
+    
+    <div class="container">
+        <h2>Enter a five digit number like 12345.</h2>
+        <input type="text" id="numberCheck" placeholder="5-digit number">
+        <button onclick="checkNumber()">Submit</button>
+        <div id="numberCheckResult"></div>
+    </div>
+
+</body>
+</html>

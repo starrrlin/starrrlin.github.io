@@ -4,7 +4,9 @@ $uchicago-light-grey: #D6D6CE;
 $white: #FFFFFF;
 $black: #000000;
 $font-stack: Helvetica, sans-serif;
-$std-margin-left: 30px;
+$std-margin-left: 20px;
+$navbar-logo-height: 30px; 
+
 
 body {
   margin: 0;
@@ -49,6 +51,11 @@ p {
         text-decoration: none;
         color: $uchicago-light-grey;
         font-family: $font-stack;
+        .navbar-logo {
+          height: $navbar-logo-height;
+          width: auto; 
+          vertical-align: middle; 
+        }
         &:hover { 
           color: $uchicago-dark-grey;
         }

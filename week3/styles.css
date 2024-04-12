@@ -44,6 +44,11 @@ p {
   color: #D6D6CE;
   font-family: Helvetica, sans-serif;
 }
+.navbar ul li a .navbar-logo {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
 .navbar ul li a:hover {
   color: #767676;
 }
