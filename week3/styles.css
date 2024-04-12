@@ -29,24 +29,27 @@ p {
   padding: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navbar ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 .navbar ul li {
-  margin-right: 35px;
+  margin-right: 40px;
 }
 .navbar ul li a {
   text-decoration: none;
   color: #D6D6CE;
   font-family: Helvetica, sans-serif;
+  align-items: center;
   font-size: 18px;
 }
 .navbar ul li a .navbar-logo {
-  height: 30px;
+  height: 20px;
   width: auto;
   vertical-align: middle;
 }

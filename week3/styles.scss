@@ -5,7 +5,7 @@ $white: #FFFFFF;
 $black: #000000;
 $font-stack: Helvetica, sans-serif;
 $std-margin-left: 20px;
-$navbar-logo-height: 30px; 
+$navbar-logo-height: 20px; 
 
 
 body {
@@ -39,18 +39,21 @@ p {
   padding: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
     li {
-      margin-right: 35px;
+      margin-right: 40px;
       a {
         text-decoration: none;
         color: $uchicago-light-grey;
         font-family: $font-stack;
+        align-items: center;
         font-size: 18px;
         .navbar-logo {
           height: $navbar-logo-height;
