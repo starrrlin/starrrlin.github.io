@@ -36,7 +36,7 @@ p {
 
 .navbar {
   background-color: $uchicago-maroon;
-  padding: 1.2rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
 
@@ -46,11 +46,12 @@ p {
     margin: 0;
     padding: 0;
     li {
-      margin-right: 1.2rem;
+      margin-right: 35px;
       a {
         text-decoration: none;
         color: $uchicago-light-grey;
         font-family: $font-stack;
+        font-size: 18px;
         .navbar-logo {
           height: $navbar-logo-height;
           width: auto; 
@@ -62,7 +63,6 @@ p {
         &.active, &.bold {
           color: #FFFFFF;
           font-weight: bold;
-          font-size: 18px;
         }
       }
     }
