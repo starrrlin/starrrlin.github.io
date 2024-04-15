@@ -4,31 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Starr's Site!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rznKtf4aQD9nHnHfE9vsqMAMuBGoB8YhZ6UAm2+8C1lvZMQs8F6k5TrMi3ad+f+o" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/week3/styles.css">
     <link rel="icon" type="image/x-icon" href="star_image.jpg">
+    <style>
+        :root {
+            --uchicago-maroon: #800000;
+            --uchicago-dark-grey: #767676; 
+            --uchicago-light-grey: #D6D6CE;
+            --white: #FFFFFF;
+            --black: #000000;
+            --font-stack: Helvetica, sans-serif;
+            --std-margin-left: 35px;
+            --std-margin-right: 35px;
+            --navbar-logo-height: 20px;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: var(--font-stack);
+          line-height: 1.6;
+        }
+
+        h1, h3, p {
+          margin-left: var(--std-margin-left);
+          margin-right: var(--std-margin-right);
+          font-family: var(--font-stack);
+        }
+
+        h1 {
+          margin-top: 30px;
+          font-weight: bold;
+          color: var(--black);
+          line-height: 1;
+        }
+
+        h3 {
+          color: var(--uchicago-dark-grey);
+          line-height: 1;
+        }
+
+        p {
+          color: var(--black);
+          line-height: 1.6;
+        }
+
+        .col-sm {
+          background-color: #e0dfdf;
+          padding: 1rem; 
+          margin-bottom: 0.5rem; 
+          border-radius: 0.25rem; 
+        }
+
+        .navbar-custom {
+            background-color: var(--uchicago-maroon);
+            font-family: var(--font-stack);
+        }
+        
+        .navbar-custom .nav-link {
+            color: var(--uchicago-light-grey);
+            font-size: 18px;
+        }
+
+        .navbar-custom .navbar-brand img {
+            height: var(--navbar-logo-height);
+            width: auto; 
+            vertical-align: middle; 
+        }
+        
+        .navbar-custom .nav-link:hover {
+            color: var(--uchicago-dark-grey);
+        }
+        
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'><path stroke='%23FFFFFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+        }
+    </style>
 </head>
+
 <body>
     <!-- navbar part-->
-    <nav class="navbar">
-        <ul>
-            <li><a href="https://starrrlin.github.io/">
-                <img src="logo.png" alt="Starr's Site Logo" class="navbar-logo"></a></li>
-            <li><a href="/week2/w2_digital_cb.html">Digital Chalkboard Week 02</a></li>
-            <li><a href="https://teamfighttactics.leagueoflegends.com/en-us/">My Fav Game</a></li>
-            <li><a href="js.html">JS Fun</a></li>
-            <li><a href="/week3/about.html">About Me</a></li>
-        </ul>
-    </nav>   
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://starrrlin.github.io/">
+                <img src="logo.png" alt="Starr's Site Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/week2/w2_digital_cb.html">Digital Chalkboard Week 02</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://teamfighttactics.leagueoflegends.com/en-us/">My Fav Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="js.html">JS Fun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/week3/about.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    
 
     <h1>Welcome to Starr's Site!</h1>
     <h3>This site is in UChicago Color Palette</h3>
     <p><a href="/week2/console.html" class="custom-link">> Console Page</a><br>
     <a href="/week2/404.html" class="custom-link">> 404 Not Found</a><br>
     <a href="/week3/list.html" class="custom-link">> List</a><br>
-    <a href="/week3/new_challenge.html" class="custom-link">> New Challenge: List of Lists</a></p>
+    <a href="/week3/new_challenge.html" class="custom-link">> New Challenge: List of Lists</a><br>
+    </p>
+
     <p>Click here to go to:
         <a href="https://en.wikipedia.org/wiki/JavaScript" class="custom-link">JavaScript Wiki Page.</a></p>
+    <br>
+
+    <div class="container">
+        <div class="row gx-4 gy-4">
+          <div class="col-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae massa enim. Curabitur eget congue justo. Nulla facilisi. Nullam elementum.</div>
+          <div class="col-sm">Fusce augue elit, tempus a auctor a, pretium et orci. Sed fringilla, urna non posuere ultricies, tortor tellus maximus magna.</div>
+          <div class="col-sm">Pellentesque vitae maximus ante. Aliquam sagittis ante in viverra pharetra. Morbi vitae nisl euismod ante tincidunt aliquet. Morbi quam dui.</div>
+          <div class="col-sm">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse convallis a nisl quis auctor. Nullam.</div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <!-- Your columns here... -->
+        <!-- ... -->
+        
+        <!-- New row for buttons -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <button id="greetButton" class="btn btn-primary" onclick="greetUser()">Greet</button>
+            </div>
+            <div class="col text-center">
+                <button id="changeButton" class="btn btn-primary" onclick="changeButtonText()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function greetUser() {
+            const now = new Date();
+            const hour = now.getHours();
+            let greeting;
+            
+            if (hour < 12) {
+                greeting = 'Good morning';
+            } else if (hour < 18) {
+                greeting = 'Good day';
+            } else {
+                greeting = 'Good evening';
+            }
+            
+            alert(greeting);
+        }
+    
+        function changeButtonText() {
+            const button = document.getElementById('changeButton');
+            console.log('Before:', button.textContent, button.className);
+    
+            button.textContent = 'Done';
+            button.className = button.className.replace('btn-primary', 'btn-success');
+    
+            console.log('After:', button.textContent, button.className);
+        }
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBI4s0YrXGJkmQ3EHMG0oaixMjhx9pGj0LY7psYsnvKm+kA2S0/h8N2K4" crossorigin="anonymous"></script>
 </body>
 </html>
