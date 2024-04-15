@@ -97,13 +97,13 @@ tr:nth-child(even) {
 
 a.custom-link {
   text-decoration: none;
-  color: #d96732;
-}
-
-a.custom-link:visited {
   color: #800000;
 }
 
+a.custom-link:visited {
+  color: #e37418;
+}
+
 a.custom-link:hover {
-  color: #ddb626;
+  color: #e37418;
 }/*# sourceMappingURL=styles.css.map */
