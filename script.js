@@ -4,9 +4,9 @@ function checkTrivia() {
     const correctAnswer = "Paris";
     const triviaResult = document.getElementById("triviaResult");
     if (answer.trim().toLowerCase() === correctAnswer.toLowerCase()) {
-        triviaResult.textContent = `You guessed ${answer}. Correct!`;
+        triviaResult.textContent = `Correct! You guessed ${answer}.`;
     } else {
-        triviaResult.textContent = `You guessed ${answer}. Incorrect!`;
+        triviaResult.textContent = `Incorrect! You guessed ${answer}.`;
     }
 }
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const numberInput = document.getElementById("numberCheck");
     numberInput.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
-            event.preventDefault();
+           
             checkNumber();
         }
     });
