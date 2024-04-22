@@ -17,7 +17,6 @@ var playlist = [
         file: "/audio/iknownow.mp3",
         cover: "/images/iknownow_cover.png"
     },
-    // ... Add more songs here
 ];
 
 
@@ -35,11 +34,11 @@ function togglePlayPause() {
     var playPauseIcon = document.getElementById('play-pause-icon');
     if (sound.playing()) {
         sound.pause();
-        playPauseIcon.src = '/images/play.png'; // Replace with your play icon path
+        playPauseIcon.src = '/images/play.png'; 
         playPauseIcon.alt = 'Play';
     } else {
         sound.play();
-        playPauseIcon.src = '/images/pause.png'; // Replace with your pause icon path
+        playPauseIcon.src = '/images/pause.png'; 
         playPauseIcon.alt = 'Pause';
     }
 }

@@ -28,6 +28,11 @@ h3 {
   line-height: 1;
 }
 
+h6 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
 p {
   margin-left: 40px;
   margin-right: 40px;

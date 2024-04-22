@@ -1,4 +1,3 @@
-// Function to check the trivia answer
 function checkTrivia() {
     const answer = document.getElementById("triviaAnswer").value;
     const correctAnswer = "Paris";
@@ -10,19 +9,26 @@ function checkTrivia() {
     }
 }
 
-// Function to check if a number is odd or even
 function checkNumber() {
-    const number = document.getElementById("numberCheck").value;
+    const input = document.getElementById("numberCheck").value;
+    const number = parseInt(input, 10); 
+    
     const numberCheckResult = document.getElementById("numberCheckResult");
-    if (/^\d{5}$/.test(number)) {
-        const isEven = parseInt(number, 10) % 2 === 0;
+    
+    if (isNaN(number)) {
+        numberCheckResult.textContent = "The input is not a valid number. Please enter only numeric values.";
+        return;
+    }
+
+    if (input.trim().length === 5 && number >= 10000 && number <= 99999) {
+        const isEven = number % 2 === 0;
         numberCheckResult.textContent = `${number} is an ${isEven ? "even" : "odd"} number.`;
     } else {
-        numberCheckResult.textContent = `Please enter a valid 5-digit number.`;
+        numberCheckResult.textContent = "Please enter a valid 5-digit number.";
     }
 }
 
-// Function to trigger button click on Enter key press
+
 document.addEventListener('DOMContentLoaded', () => {
     const triviaInput = document.getElementById("triviaAnswer");
     triviaInput.addEventListener("keypress", function(event) {
