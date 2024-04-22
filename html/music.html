@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Howler.js Example</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+</head>
+<body>
+<button onclick="sound.play()">Play</button>
+<button onclick="sound.pause()">Pause</button>
+<script>
+    var sound = new Howl({
+        src: [''],  
+        autoplay: false,       // Autoplay the sound right after loading
+        loop: false,           // Loop the sound
+        volume: 0.5,           // Set volume (0.0 to 1.0)
+        onend: function() {
+            console.log('Finished playing');
+        }
+    });
+</script>
+</body>
+</html>
