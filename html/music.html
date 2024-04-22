@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Howler.js Example</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/css/music_styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-<button onclick="sound.play()">Play</button>
-<button onclick="sound.pause()">Pause</button>
-<script>
-    var sound = new Howl({
-        src: [''],  
-        autoplay: false,       // Autoplay the sound right after loading
-        loop: false,           // Loop the sound
-        volume: 0.5,           // Set volume (0.0 to 1.0)
-        onend: function() {
-            console.log('Finished playing');
-        }
-    });
-</script>
+    <!-- navbar part-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://starrrlin.github.io/">
+                <img src="/images/logo.png" alt="Starr's Site Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/w2_digital_cb.html">Digital Chalkboard Week 02</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://teamfighttactics.leagueoflegends.com/en-us/">My Fav Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/js.html">JS Fun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/about.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <player>
+        <div class="audio-player">
+            <div class="track-artwork">
+                <img src="/images/besideyou_cover.jpg" alt="Album Cover" id="track-art">
+            </div>
+            <div class="track-controls">
+                <div class="track-info">
+                    <h2 id="track-title">Beside You</h2>
+                    <h4 id="track-artist">keshi</h4>
+                </div>
+                <div class="controls">
+                    <div class="control-buttons">
+
+                        <button id="prev" onclick="skip('prev')">
+                            <img src="/images/previous.png" alt="Previous">
+                        </button>
+                        <button id="playPause" onclick="togglePlayPause()">
+                            <img src="/images/play.png" alt="Play" id="play-pause-icon">
+                        </button>
+                        <button id="next" onclick="skip('next')">
+                            <img src="/images/next.png" alt="Next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </player>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <script src="/js/music.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
