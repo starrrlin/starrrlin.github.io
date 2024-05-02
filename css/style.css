@@ -51,19 +51,17 @@ p {
 .navbar {
   background-color: #800000;
   padding: 1.5rem;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .navbar ul {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
   align-items: center;
 }
 .navbar ul li {
-  margin-right: 35px;
+  margin-right:35px;
 }
 .navbar ul li a {
   text-decoration: none;
