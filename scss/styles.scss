@@ -6,7 +6,7 @@ $white: #FFFFFF;
 $black: #000000;
 $font-stack: Helvetica, sans-serif;
 $std-margin: 35px;
-$navbar-logo-height: 20px;
+$navbar-logo-height: 16px;
 
 // General body styles
 body {
@@ -35,6 +35,8 @@ h3 {
   margin-right: $std-margin;
   font-family: $font-stack;
   color: $uchicago-dark-grey;
+  align-items: center;
+  text-align: center;
 }
 
 h6 {
@@ -47,6 +49,13 @@ p {
   margin-right: $std-margin;
   color: $black;
   line-height: 1.6;
+  align-items: center;
+  text-align: center;
+}
+
+// Line spacing
+.line-spacing {
+  line-height: 1.5;
 }
 
 // Components
@@ -59,9 +68,52 @@ p {
 
 .navbar {
   background-color: $uchicago-maroon;
-  padding: 1.5rem;
+  padding: 0.8rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  .nav-link, .dropdown-toggle {
+    text-align: center; 
+    width: 100%; 
+    font-weight: lighter; 
+  }
+
+  .nav-item {
+    align-items: center; 
+    justify-content: center; 
+    flex: 1 0 auto;
+
+    &:hover .dropdown-menu {
+      display: block; 
+    }
+    &:hover > a, &:focus-within > a {
+      font-weight: bold; 
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $uchicago-light-grey;
+    border-radius: 0;
+    border: none !important;
+    position: absolute;
+    top: 100%; 
+    min-width: 100%; 
+    width: 100%;
+
+    .dropdown-item {
+      color: $uchicago-dark-grey;
+      background-color: transparent; 
+
+      &:hover {
+        color: $uchicago-maroon;
+        background-color: transparent; 
+      }
+    }
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block; 
+  }
 
   ul {
     list-style: none;
@@ -70,17 +122,20 @@ p {
     align-items: center;
 
     li {
-      margin-right: 35px;
+      margin-right: 45px;
+      position: relative; 
 
       a {
         text-decoration: none;
         color: $uchicago-light-grey;
         font-family: $font-stack;
-        font-size: 18px;
+        font-size: 16px;
         align-items: center;
+        font-weight: light;
 
         &:hover {
-          color: $uchicago-dark-grey;
+          color: $uchicago-light-grey;
+          font-weight: bold;
         }
 
         &.active, &.bold {
@@ -95,7 +150,8 @@ p {
 .navbar-custom .navbar-brand img {
   height: $navbar-logo-height;
   width: auto; 
-  vertical-align: middle; 
+  vertical-align: 0%; 
+  margin-right: 1.5rem;
 }
 
 // Tables
@@ -135,7 +191,7 @@ a.custom-link {
 
 // Responsive components and additional classes
 .fixed-height-image {
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -147,7 +203,7 @@ a.custom-link {
 }
 
 .carousel-item {
-  padding-top: 35%;
+  padding-top: 40%;
   position: relative;
   background-size: cover;
   background-position: center;
