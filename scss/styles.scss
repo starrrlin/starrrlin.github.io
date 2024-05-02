@@ -1,14 +1,14 @@
+// Variables
 $uchicago-maroon: #800000;
 $uchicago-dark-grey: #767676; 
 $uchicago-light-grey: #D6D6CE;
 $white: #FFFFFF;
 $black: #000000;
 $font-stack: Helvetica, sans-serif;
-$std-margin-left: 20px;
-$std-margin-right: 20px;
-$navbar-logo-height: 20px; 
+$std-margin: 35px;
+$navbar-logo-height: 20px;
 
-
+// General body styles
 body {
   margin: 0;
   padding: 0;
@@ -16,75 +16,75 @@ body {
   line-height: 1.6;
 }
 
+// Headings
 h0 {
-  color:#FFFFFF;
-  font-size: 48px;
+  font-size: 45px;;
 }
 
 h1 {
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: bold;
-  margin-left: $std-margin-left;
-  margin-right: $std-margin-right;
-  font-family: $font-stack;
+  margin-left: $std-margin;
+  margin-right: $std-margin;
   color: $black;
   line-height: 1;
 }
 
 h3 {
-  margin-left: $std-margin-left;
-  margin-right: $std-margin-right;
+  margin-left: $std-margin;
+  margin-right: $std-margin;
   font-family: $font-stack;
   color: $uchicago-dark-grey;
-  line-height: 1;
+}
+
+h6 {
+  font-family: $font-stack;
+  font-size: 18px;
 }
 
 p {
-  margin-left: $std-margin-left;
-  margin-right: $std-margin-right;
-  font-family: $font-stack;
+  margin-left: $std-margin;
+  margin-right: $std-margin;
   color: $black;
   line-height: 1.6;
 }
 
+// Components
 .col-sm {
   background-color: #e2e3e4;
-  padding: 1rem; 
-  margin-bottom: 0.5rem; 
-  border-radius: 0.25rem; 
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .navbar {
   background-color: $uchicago-maroon;
   padding: 1.5rem;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 
   ul {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
+
     li {
       margin-right: 35px;
+
       a {
         text-decoration: none;
         color: $uchicago-light-grey;
         font-family: $font-stack;
-        align-items: center;
         font-size: 18px;
-        .navbar-logo {
-          height: $navbar-logo-height;
-          width: auto; 
-          vertical-align: middle; 
-        }
-        &:hover { 
+        align-items: center;
+
+        &:hover {
           color: $uchicago-dark-grey;
         }
+
         &.active, &.bold {
-          color: #FFFFFF;
+          color: $white;
           font-weight: bold;
         }
       }
@@ -92,32 +92,94 @@ p {
   }
 }
 
+.navbar-custom .navbar-brand img {
+  height: $navbar-logo-height;
+  width: auto; 
+  vertical-align: middle; 
+}
+
+// Tables
 table {
   margin: 20px;
   width: 100%;
   border-collapse: collapse;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-th {
-  background-color: #f2f2f2;
-}
-tr:nth-child(even) {
-  background-color: #f9f9f9;
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
 }
 
+// Links
 a.custom-link {
-  text-decoration: none; 
-  color: #800000; 
+  text-decoration: none;
+  color: $uchicago-maroon;
+
+  &:visited {
+    color: #e37418;
+  }
+
+  &:hover {
+    color: #e37418;
+  }
 }
 
-a.custom-link:visited {
-  color: #e37418; 
+// Responsive components and additional classes
+.fixed-height-image {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
-a.custom-link:hover {
-  color: #e37418; 
+.centered-row {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  padding-top: 35%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
 }
