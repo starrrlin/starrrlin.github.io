@@ -64,7 +64,7 @@ p {
 }
 
 #preview img {
-  max-width: 200%; 
+  max-width: 100%; 
   height: auto; 
 }
 
@@ -80,6 +80,16 @@ p {
 // Line spacing
 .line-spacing {
   line-height: 1.5;
+}
+
+// button styling
+.btn-custom {
+  background-color: $uchicago-maroon;
+  color: white;
+  padding: 4px 12px; 
+  font-size: 16px; 
+  border-radius: 4px;
+  border: none;
 }
 
 // Components
