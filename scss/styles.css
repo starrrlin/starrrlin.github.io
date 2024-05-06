@@ -42,6 +42,18 @@ p {
   text-align: center;
 }
 
+#preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#preview img {
+  max-width: 100%;
+  height: auto;
+}
+
 .line-spacing {
   line-height: 1.5;
 }
