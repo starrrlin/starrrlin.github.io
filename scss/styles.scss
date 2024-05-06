@@ -64,9 +64,18 @@ p {
 }
 
 #preview img {
-  max-width: 100%; 
+  max-width: 200%; 
   height: auto; 
 }
+
+// map format
+#map {
+  height: 600px; 
+  width: 900px;
+  margin: 0 auto; 
+  border: 1px solid #ccc; 
+}
+
 
 // Line spacing
 .line-spacing {
