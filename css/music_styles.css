@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap');
+
 .player {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #000; 
     color: white;
     padding-top: 70px; 

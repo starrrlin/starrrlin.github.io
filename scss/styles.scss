@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap');
+
 // Variables
 $uchicago-maroon: #800000;
 $uchicago-dark-grey: #767676; 
 $uchicago-light-grey: #D6D6CE;
 $white: #FFFFFF;
 $black: #000000;
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Raleway', sans-serif;
 $std-margin: 35px;
 $navbar-logo-height: 16px;
 
@@ -68,14 +70,14 @@ p {
 
 .navbar {
   background-color: $uchicago-maroon;
-  padding: 0.8rem;
+  padding: 0.6rem;
   align-items: center;
   justify-content: center;
 
   .nav-link, .dropdown-toggle {
     text-align: center; 
     width: 100%; 
-    font-weight: lighter; 
+    font-weight: light; 
   }
 
   .nav-item {
