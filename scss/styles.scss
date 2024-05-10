@@ -113,6 +113,7 @@ a:hover {
   border-radius: 0.25rem;
 }
 
+// navbar styling
 .navbar {
   background-color: $uchicago-maroon;
   padding: 0.6rem;
@@ -139,7 +140,7 @@ a:hover {
   }
 
   .dropdown-menu {
-    background-color: $uchicago-light-grey;
+    background-color: $uchicago-dark-grey;
     border-radius: 0;
     border: none !important;
     position: absolute;
