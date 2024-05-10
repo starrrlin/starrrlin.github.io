@@ -99,6 +99,10 @@ a:hover {
   padding: 0.6rem;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 .navbar .nav-link, .navbar .dropdown-toggle {
   text-align: center;

@@ -89,7 +89,6 @@ a:hover {
   border: 1px solid #ccc; 
 }
 
-
 // Line spacing
 .line-spacing {
   line-height: 1.5;
@@ -119,6 +118,10 @@ a:hover {
   padding: 0.6rem;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;      // Ensures the navbar extends across the full width of the viewport
+  z-index: 1000;  
 
   .nav-link, .dropdown-toggle {
     text-align: center; 
