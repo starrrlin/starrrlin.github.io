@@ -157,9 +157,19 @@ a:hover {
   color: #D6D6CE;
   font-weight: bold;
 }
-.navbar ul li a.active, .navbar ul li a.bold {
-  color: #FFFFFF;
+
+.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link:active,
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle:active {
+  color: white;
   font-weight: bold;
+  background-color: #800000;
+  outline: none;
+}
+
+.navbar .nav-item a:visited, .navbar .nav-item a:active, .navbar .nav-item a:focus {
+  color: white;
 }
 
 .navbar-custom .navbar-brand img {

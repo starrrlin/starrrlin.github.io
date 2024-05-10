@@ -183,13 +183,24 @@ a:hover {
           color: $uchicago-light-grey;
           font-weight: bold;
         }
-
-        &.active, &.bold {
-          color: $white;
-          font-weight: bold;
-        }
       }
     }
+  }
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+  &:hover, &:focus, &:active {
+    color: white; 
+    font-weight: bold;
+    background-color: $uchicago-maroon; 
+    outline: none; 
+  }
+}
+
+.navbar .nav-item a {
+  &:visited, &:active, &:focus {
+    color: white;
   }
 }
 
