@@ -40,37 +40,42 @@
     <div id="navbar-placeholder"></div>  
 
     <!-- js more fun -->
-    <div class="mb-4"></div> 
+    <div class="main-content">
+        <div class="mb-4"></div> 
 
-    <div class="container">
-        <h6>Default values: Watermelon, Apple, Orange, Kiwi</h6>
-        <button onclick="lastItem()">Sort</button>
-        <div id="fruit"></div>
+        <div class="container">
+            <h6>Default values: Watermelon, Apple, Orange, Kiwi</h6>
+            <button onclick="lastItem()">Sort</button>
+            <div id="fruit"></div>
+        </div>
+
+        <div class="container">
+            <button onclick="sortItemsInput()">Input and Sort Items</button>
+            <div id="outputArray"></div>
+        </div>
+
+        <!-- trivia question and number checker-->
+        <div class="mb-4"></div> 
+
+        <div class="container">
+            <h2>Trivia question</h2>
+            <h6>Q: What is the capital of France?</h6>
+            <input type="text" id="triviaAnswer" placeholder="Your answer">
+            <button onclick="checkTrivia()">Submit</button>
+            <div id="triviaResult"></div>
+        </div>
+        
+        <div class="container">
+            <h2>Enter a five digit number like 12345.</h2>
+            <input type="text" id="numberCheck" placeholder="5-digit number">
+            <button onclick="checkNumber()">Submit</button>
+            <div id="numberCheckResult"></div>
+        </div>
     </div>
 
-    <div class="container">
-        <button onclick="sortItemsInput()">Input and Sort Items</button>
-        <div id="outputArray"></div>
-    </div>
-
-    <!-- trivia question and number checker-->
-    <div class="mb-4"></div> 
-
-    <div class="container">
-        <h2>Trivia question</h2>
-        <h6>Q: What is the capital of France?</h6>
-        <input type="text" id="triviaAnswer" placeholder="Your answer">
-        <button onclick="checkTrivia()">Submit</button>
-        <div id="triviaResult"></div>
-    </div>
-    
-    <div class="container">
-        <h2>Enter a five digit number like 12345.</h2>
-        <input type="text" id="numberCheck" placeholder="5-digit number">
-        <button onclick="checkNumber()">Submit</button>
-        <div id="numberCheckResult"></div>
-    </div>
-
+    <!-- footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/js/footer.js"></script>
     <script src="/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

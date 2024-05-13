@@ -12,36 +12,41 @@
     <!-- navbar part-->
     <div id="navbar-placeholder"></div>  
 
-    <!-- muscic player -->
-    <div class="mb-4"></div>
-    <br>
-    <player>
-        <div class="audio-player">
-            <div class="track-artwork">
-                <img src="/images/besideyou_cover.jpg" alt="Album Cover" id="track-art">
-            </div>
-            <div class="track-controls">
-                <div class="track-info">
-                    <h2 id="track-title">Beside You</h2>
-                    <h4 id="track-artist">keshi</h4>
+    <div class="main-content">
+        <!-- muscic player -->
+        <div class="mb-4"></div>
+        <player>
+            <div class="audio-player">
+                <div class="track-artwork">
+                    <img src="/images/besideyou_cover.jpg" alt="Album Cover" id="track-art">
                 </div>
-                <div class="controls">
-                    <div class="control-buttons">
+                <div class="track-controls">
+                    <div class="track-info">
+                        <h2 id="track-title">Beside You</h2>
+                        <h4 id="track-artist">keshi</h4>
+                    </div>
+                    <div class="controls">
+                        <div class="control-buttons">
 
-                        <button id="prev" onclick="skip('prev')">
-                            <img src="/images/previous.png" alt="Previous">
-                        </button>
-                        <button id="playPause" onclick="togglePlayPause()">
-                            <img src="/images/play.png" alt="Play" id="play-pause-icon">
-                        </button>
-                        <button id="next" onclick="skip('next')">
-                            <img src="/images/next.png" alt="Next">
-                        </button>
+                            <button id="prev" onclick="skip('prev')">
+                                <img src="/images/previous.png" alt="Previous">
+                            </button>
+                            <button id="playPause" onclick="togglePlayPause()">
+                                <img src="/images/play.png" alt="Play" id="play-pause-icon">
+                            </button>
+                            <button id="next" onclick="skip('next')">
+                                <img src="/images/next.png" alt="Next">
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-    </player>
+        </player>
+        <div class="mb-4"></div>
+    </div>
 
+    <!-- footer -->
+    <div id="footer-placeholder"></div>
+    <script src="/js/footer.js"></script>
     <script src="/js/navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
     <script src="/js/music.js"></script>
